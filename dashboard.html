@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="result-box">
+            <h2>Self Assessment Results</h2>
+            <div id="self-assessment-results">
+                <!-- Self-assessment results will be injected here -->
+            </div>
+        </div>
+
+        <div class="result-box">
+            <h2>Career Quiz Results</h2>
+            <div id="career-quiz-results">
+                <!-- Career quiz results will be injected here -->
+            </div>
+        </div>
+
+        <!-- Create Roadmap Button -->
+        <button id="create-roadmap-btn" class="next-btn">Create Roadmap</button>
+    </section>
+
+    <!-- Navigation Bar -->
+    <footer class="nav-bar">
+        <button class="nav-btn" onclick="location.href='index.html'">Home</button>
+        <button class="nav-btn" onclick="location.href='self-assessment.html'">Self Assessment</button>
+        <button class="nav-btn" onclick="location.href='career-quiz.html'">Career Quiz</button>
+        <button class="nav-btn">Chat with AI</button>
+        <button class="nav-btn" onclick="location.href='dashboard.html'">Dashboard</button>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
