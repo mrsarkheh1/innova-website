@@ -1,0 +1,202 @@
+/* Global Reset and Body Styling */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #3b5998;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Progress Section */
+.progress-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.progress-bar-container {
+    display: inline-block;
+    width: 80%;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0; /* Initially set to 0%, will update dynamically */
+    background-color: #3b5998;
+    transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.progress-fill.complete {
+    background-color: #4caf50; /* Green color for 100% completion */
+}
+
+/* Tiles Section */
+.tiles-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.tile {
+    background-color: #e0f7fa;
+    width: 45%;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 18px;
+    cursor: not-allowed; /* Placeholder tiles should be inactive */
+}
+
+/* Quiz Section */
+.quiz-section {
+    text-align: center;
+    padding: 20px;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.choice {
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.choice:hover {
+    background-color: #b2ebf2;
+}
+
+.choice.selected {
+    background-color: #4fc3f7;
+    border: 2px solid #0288d1;
+}
+
+.next-btn {
+    padding: 10px 20px;
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.next-btn:disabled {
+    background-color: #bdbdbd;
+    cursor: not-allowed;
+}
+
+/* Results Section for Dashboard */
+.results-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.result-box {
+    background-color: #e0f7fa;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.result-box h2 {
+    margin-bottom: 15px;
+}
+
+#self-assessment-results, #career-quiz-results {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Roadmap Section */
+.roadmap-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.roadmap-box {
+    background-color: #e0f7fa;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.roadmap-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.roadmap-box h3 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.roadmap-box p {
+    font-size: 18px;
+}
+
+.roadmap-box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #3b5998;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.nav-btn {
+    background: none;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-btn:focus {
+    outline: none;
+}
